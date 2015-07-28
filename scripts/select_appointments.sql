@@ -1,19 +1,20 @@
 -- retrieve appointment information
-SELECT p.surname, p.given_name
+SELECT p.surname, p.given_name, a.time
 FROM patients p
 INNER JOIN appointments a
 	ON p.id = a.patient_id
-WHERE a.doctor_id =  6;
+WHERE a.doctor_id =  6
+;
 
-SELECT d.surname, d.given_name
+SELECT d.surname, d.given_name, a.time
 FROM doctors d
 INNER JOIN appointments a
-	ON d.id = a.patient_id
-WHERE a.patient_id = 8;
-
+	ON d.id = a.doctor_id
+WHERE a.patient_id = 8
+;
 -- Retrieve the names and appointment times for everyone seeing Dr. Hubbard.
---
 -- Retrieve the Doctors' names and appointment times for Marsha Wilcox.
+
 -- SELECT p.surname, p.given_name
 -- FROM people p
 -- INNER JOIN endorsements e
