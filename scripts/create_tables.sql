@@ -1,1 +1,1 @@
--- create doctors, patients, and appointments tables.
+-- create doctors, patients, and appointments tables

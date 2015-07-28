@@ -1,1 +1,1 @@
--- load doctors and patients tables from csv files.
+-- load doctors and patients tables from csv files
