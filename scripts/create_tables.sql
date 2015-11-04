@@ -22,6 +22,6 @@ CREATE TABLE appointments (
   date TEXT,
   time TEXT,
   comment TEXT,
-  FOREIGN KEY (doctor_id) REFERENCES doctors(id)
+  FOREIGN KEY (doctor_id) REFERENCES doctors(id),
   FOREIGN KEY (patient_id) REFERENCES patients(id)
 );
