@@ -25,3 +25,7 @@ CREATE TABLE appointments(
   doctor_id INTEGER REFERENCES doctors(id),
   patient_id INTEGER REFERENCES patients(id)
 );
+
+-- FORGOT TO ADD 'COMMENT COLUMN'
+
+ALTER TABLE appointments ADD comment TEXT;
