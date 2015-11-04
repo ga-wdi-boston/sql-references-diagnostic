@@ -3,20 +3,23 @@
 
 
 
-SELECT p.surname, p.given_name, p.appointment_time, p.appointment_date
+SELECT p.surname, p.given_name, a.appointment_time, a.appointment_date
 FROM patients p
 INNER JOIN appointments a
-  ON e.skill_id = s.id
+  ON a.patient_id = p.id
 INNER JOIN doctors d
-  ON e.person_id = p.id
-WHERE p.surname = 'Worley'
+  ON a.doctor_id = d.id
+WHERE a.doctor_id = 6
 ;
 
-SELECT s.framework, s.language
-FROM skills s
-INNER JOIN endorsements e
-  ON e.skill_id = s.id
-INNER JOIN people p
-  ON e.person_id = p.id
-WHERE p.surname = 'Worley'
+
+
+SELECT d.surname, d.given_name, a.appointment_time, a.appointment_date
+FROM patients p
+INNER JOIN appointments a
+  ON a.patient_id = p.id
+INNER JOIN doctors d
+  ON a.doctor_id = d.id
+WHERE a.patient_id = 8
 ;
+
