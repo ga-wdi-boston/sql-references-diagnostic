@@ -1,4 +1,5 @@
 -- create doctors, patients, and appointments tables
+--doctors
 CREATE TABLE doctors (
   id SERIAL PRIMARY KEY,
   surname CHARACTER VARYING(128),
@@ -11,6 +12,7 @@ CREATE TABLE doctors (
   patient_id INTEGER REFERENCES patients(id)
 );
 
+--patients
 CREATE TABLE patients (
   id SERIAL PRIMARY KEY,
   surname CHARACTER VARYING(128),
@@ -23,6 +25,7 @@ CREATE TABLE patients (
   patient_id INTEGER REFERENCES patients(id)
 );
 
+-- appointments
 CREATE TABLE appointments (
   id SERIAL PRIMARY KEY,
   appointment_date DATE,
