@@ -1,6 +1,6 @@
 ![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
 
-# Assessment: PostgreSQL Relations
+# Diagnostic: PostgreSQL Relations
 
 You have 30 minutes.
 
@@ -10,7 +10,7 @@ Fork and clone this repository.
 
 Follow the prompts below and complete each question.
 You may use any resource, other than someone else in the classroom,
- to help you complete the assessment.
+ to help you complete the diagnostic.
 
 ### Question 1
 
@@ -51,6 +51,6 @@ Save your code in `scripts/select_appointments.sql`.
 
 You can test your work by running `psql sql-crud -f <script name>.[p]sql`.
 
-Commit and push your changes.
+Commit and push your changes, and submit a pull request.
 
 Submit a pull request.
