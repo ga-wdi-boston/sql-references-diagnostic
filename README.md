@@ -27,7 +27,7 @@ Create three tables using the file `scripts/create_tables.sql`
 
 ### Question 2
 
-Use the `psql` `\copy` command to load
+Use the PSQL `\copy` command to load
  the doctors and patients tables from the files `data/doctors.csv`
  and `data/patients.csv` respectively.
 Save your code in `scripts/load_doctors_and_patients.psql`.
@@ -45,12 +45,13 @@ Save your code in `insert_into_appointments.sql`:
 
 ### Question 4
 
-Retrieve the names and appointment times for everyone seeing Dr. Hubbard.
-Retrieve the Doctors' names and appointment times for Marsha Wilcox.
+Write a query to
+ retrieve the names and appointment times for everyone seeing Dr. Hubbard.
+Then, write another to
+ retrieve the Doctors' names and appointment times for Marsha Wilcox.
 Save your code in `scripts/select_appointments.sql`.
 
-You can test your work by running `psql sql-crud -f <script name>.[p]sql`.
+You can test your work by entering the PSQL console and running
+ `\i path/to/your_script.(p)sql`
 
-Commit and push your changes, and submit a pull request.
-
-Submit a pull request.
+Commit and push your changes, and then submit a pull request.
