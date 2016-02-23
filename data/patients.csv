@@ -1,4 +1,4 @@
-surname,given_name,gender,dob,insurance
+surname,given_name,gender,born_on,insurance
 Leblanc,Gino,m,20000326,Blue Cross
 Walden,Kirby,m,19831216,Blue Shield
 Childs,Trevor,m,19840510,Cash
