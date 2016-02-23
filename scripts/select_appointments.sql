@@ -3,6 +3,7 @@ SELECT patient_given_name, patient_surname, appt_date, appt_time
   FROM appointments
   WHERE doctor = 'Dr. Spencer Hubbard'
   GROUP BY patient_given_name, patient_surname, appt_date, appt_time
+;
 
 SELECT doctor, appt_date, appt_time
   FROM appointments
