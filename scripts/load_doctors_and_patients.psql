@@ -1,1 +1,5 @@
 -- load doctors and patients tables from csv files
+
+\copy patients(surname,given_name,gender,born_on,insurance) from 'data/patients.csv' with(header true, format csv)
+
+\copy doctors(surname,given_name,gender,born_on,specialty) from 'data/doctors.csv' with(header true, format csv)
