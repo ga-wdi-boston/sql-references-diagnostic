@@ -1,5 +1,5 @@
 -- create doctors, patients, and appointments tables
-
+  
 -- doctors table
 CREATE TABLE doctors (
 id SERIAL PRIMARY KEY,
