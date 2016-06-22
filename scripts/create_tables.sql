@@ -7,8 +7,7 @@ CREATE TABLE doctors(
   born_on DATE,
   specialty VARCHAR
 );
-
-surname,given_name,gender,born_on,insurance
+ss
 CREATE TABLE patients(
   id SERIAL PRIMARY KEY,
   surname VARCHAR,
