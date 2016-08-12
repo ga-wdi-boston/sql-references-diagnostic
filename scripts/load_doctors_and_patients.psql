@@ -1,1 +1,10 @@
 -- load doctors and patients tables from csv files
+
+
+-- Use the PSQL \copy command to load the doctors and patients tables from the files data/doctors.csv and data/patients.csv respectively. Save your code in scripts/load_doctors_and_patients.psql.
+
+\copy doctors(surname,given_name,gender,born_on,specialty
+) FROM 'data/doctors.csv' WITH (FORMAT csv, HEADER true)
+
+\copy patients(surname,given_name,gender,born_on,insurance
+) FROM 'data/patients.csv' WITH (FORMAT csv, HEADER true)
