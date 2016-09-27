@@ -1,1 +1,4 @@
 -- load doctors and patients tables from csv files
+COPY doctors FROM data/doctors.csv
+
+COPY patients FROM data/patients.csv
