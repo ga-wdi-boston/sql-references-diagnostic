@@ -24,13 +24,14 @@ Create three tables using the file `scripts/create_tables.sql`
 -   `appointments` - which should have date, time, and comment columns
      (feel free to use the type `TEXT` for all three)
      as well as columns referencing both doctors and patients.
-
+    DONE
 ### Question 2
 
 Use the PSQL `\copy` command to load
  the doctors and patients tables from the files `data/doctors.csv`
  and `data/patients.csv` respectively.
 Save your code in `scripts/load_doctors_and_patients.psql`.
+DONE
 
 ### Question 3
 
@@ -42,6 +43,8 @@ Save your code in `insert_into_appointments.sql`:
 -   Ivory Talley seeing Dr. Spencer Hubbard at 1pm on August 17, 2016.
 -   Marsha Wilcox seeing Dr. Spencer Hubbard at 10am on August 12, 2016.
 -   Blake Hodge seeing Dr. Vicky Hilton at 1pm on August 17, 2016.
+
+DONE. Clearly Marsha Wilcox has Hermione Granger's time turner.
 
 ### Question 4
 
@@ -55,3 +58,4 @@ You can test your work by entering the PSQL console and running
  `\i path/to/your_script.(p)sql`
 
 Commit and push your changes, and then submit a pull request.
+Done, sort of
