@@ -1,57 +1,46 @@
-![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
+[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Diagnostic: PostgreSQL Relations
+# Diagnostic - PostgreSQL Relationships
 
-You have 30 minutes.
+## Prerequisites
+
+-   [An Introduction to many-to-many relationships in
+    PostgreSQL](https://github.com/ga-wdi-boston/sql-references-join-tables)
 
 ## Instructions
 
-Fork and clone this repository.
+1.  Fork and clone this repository.
+1.  Change into the new directory.
+1.  Create and checkout a new branch, named `response`.
+1.  Follow the directions given in [diagnostic.md](diagnostic.md).
+1.  Before the allotted time is up, push to your fork and issue a pull request.
 
-Follow the prompts below and complete each question.
-You may use any resource, other than someone else in the classroom,
- to help you complete the diagnostic.
+Your pull request description should contain a "fist to five" for comfort and
+clarity. Additionally, you should mention the resources you used to help you
+complete this diagnostic. For example:
 
-### Question 1
+```md
+Comfort: 3
+Clarity: 3
 
-Create three tables using the file `scripts/create_tables.sql`
- (don't forget id columns for all tables):
+I used Google and my class notes to help with this diagnostic.
+```
 
--   `doctors` - use the first line of `data/doctors.csv` for the column names
+You may wish to refer to ["How do I submit diagnostics?"](https://github.com/ga-wdi-boston/meta/wiki/Diagnostics)
+and other [FAQs](https://github.com/ga-wdi-boston/meta/wiki/) related to
+[forking, cloning](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone),
+and [pull requests](https://github.com/ga-wdi-boston/meta/wiki/PullRequest).
 
--   `patients` - use the first line of `data/patients.csv` for the column names
+You may use **any resource** other than each other to complete this diagnostic.
+This includes referencing talk materials, appropriate documentation, and
+searching for help online.
 
--   `appointments` - which should have date, time, and comment columns
-     (feel free to use the type `TEXT` for all three)
-     as well as columns referencing both doctors and patients.
+Test your work by entering the PSQL console and running the scripts in order
+using `\i <path/to/script>` or by running the scripts from the command line
+using `psql --file=<path/to/script>`.
 
-### Question 2
+## [License](LICENSE)
 
-Use the PSQL `\copy` command to load
- the doctors and patients tables from the files `data/doctors.csv`
- and `data/patients.csv` respectively.
-Save your code in `scripts/load_doctors_and_patients.psql`.
-
-### Question 3
-
-Create the following appointments by inserting
- the appropriate rows into the appointments table.
-Save your code in `insert_into_appointments.sql`:
-
--   Marsha Wilcox seeing Dr. Vicky Hilton at 10am on August 12, 2016.
--   Ivory Talley seeing Dr. Spencer Hubbard at 1pm on August 17, 2016.
--   Marsha Wilcox seeing Dr. Spencer Hubbard at 10am on August 12, 2016.
--   Blake Hodge seeing Dr. Vicky Hilton at 1pm on August 17, 2016.
-
-### Question 4
-
-Write a query to
- retrieve the names and appointment times for everyone seeing Dr. Hubbard.
-Then, write another to
- retrieve the Doctors' names and appointment times for Marsha Wilcox.
-Save your code in `scripts/select_appointments.sql`.
-
-You can test your work by entering the PSQL console and running
- `\i path/to/your_script.(p)sql`
-
-Commit and push your changes, and then submit a pull request.
+1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
+1.  All software code is licensed under GNU GPLv3. For commercial use or
+    alternative licensing, please contact legal@ga.co.
