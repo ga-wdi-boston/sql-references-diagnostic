@@ -37,7 +37,7 @@ searching for help online.
 
 Test your work by entering the PSQL console and running the scripts in order
 using `\i <path/to/script>` or by running the scripts from the command line
-using `psql --file=<path/to/script>`.
+using `psql --dbname=<database> --file=<path/to/script>`.
 
 ## [License](LICENSE)
 
