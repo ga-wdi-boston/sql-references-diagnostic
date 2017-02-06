@@ -7,9 +7,9 @@ columns for all tables):
 
 -   `doctors` - use the first line of `data/doctors.csv` for the column names
 -   `patients` - use the first line of `data/patients.csv` for the column names
--   `appointments` - which should have date, time, and comment columns
-     (feel free to use the type `TEXT` for all three)
-     as well as columns referencing both doctors and patients.
+-   `appointments` - which should have date, time, and comment columns (with
+    types `DATE`, `TIME`, and `TEXT` respectively) as well as columns
+    referencing both doctors and patients.
 
 ## Question 2
 
