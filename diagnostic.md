@@ -1,5 +1,5 @@
 # Diagnostic: PostgreSQL Relationships
-
+.
 ## Question 1
 
 Create three tables using the file `scripts/create_tables.sql` (don't forget id
