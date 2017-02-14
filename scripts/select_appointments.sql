@@ -14,5 +14,6 @@ FROM appointments a
     ON a.doctor_id = d.id
   INNER JOIN patients p
     ON a.patient_id = p.id
-WHERE p.family_name = 'Hubbard'
+WHERE p.family_name = 'Wilcox'
+  ADD p.given_name = 'Marsha'
 ;
