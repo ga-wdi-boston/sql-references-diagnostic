@@ -17,6 +17,10 @@ Use the PSQL `\copy` command to load the doctors and patients tables from the
 files `data/doctors.csv` and `data/patients.csv` respectively. Save your code in
 `scripts/load_doctors_and_patients.psql`.
 
+I got stuck here, this is what I was trying, but
+it was not working.
+ \copy (SELECT * FROM doctors) TO 'scripts/load_doctors_and_patients.psql';
+
 ## Question 3
 
 Create the following appointments by inserting the appropriate rows into the
