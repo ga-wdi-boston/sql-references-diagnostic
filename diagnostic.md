@@ -17,6 +17,7 @@ Use the PSQL `\copy` command to load the doctors and patients tables from the
 files `data/doctors.csv` and `data/patients.csv` respectively. Save your code in
 `scripts/load_doctors_and_patients.psql`.
 
+\copy ingredients ( title, amount ) FROM 'data/ingredients.csv' WITH ( FORMAT csv, HEADER true);
 ## Question 3
 
 Create the following appointments by inserting the appropriate rows into the
