@@ -1,1 +1,2 @@
 -- retrieve appointment information
+SELECT
